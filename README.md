@@ -27,6 +27,7 @@ function FibonacciState() {
         setState('Z');
     }
 
+    // The Fibonacci sequence has an interesting property such that it is conjugated at the end.
     function stateZGenerator() {
         setStateZ(stateX + stateY);
         setState('X');
